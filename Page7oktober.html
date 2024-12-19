@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image on HTML</title>
+    <!-- CSS for styling -->
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .myDiv {
+            border: 5px outset greenyellow;
+            background-color: rgb(249, 242, 232);
+            text-align: center;
+        }
+
+        #flower {
+            padding: 40px;
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+        }
+
+        #animals {
+            padding: 50px;
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        .headings {
+            color: aqua;
+            font-family: cursive;
+            background-color: aquamarine;
+        }
+
+        .paragraph {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Use CSS to style an element with the id:</p>
+    <h1 id="flower">Flower</h1>
+    <h1 id="animals">Animals</h1>
+
+    <h2 class="headings">Class in HTML</h2>
+    <p class="paragraph">How to use class in HTML</p>
+
+    <h1>Kucing-kucing</h1>
+
+    <p style="background-image: url('bg.jpg');">Kucing adalah hewan mamalia</p>
+
+    <!-- Lists -->
+    <ul>
+        <li>Kucing Putih</li>
+        <li>Kucing Kuning</li>
+        <li>Kucing Abu</li>
+    </ul>
+
+    <ol>
+        <li>Kucing bulu pendek</li>
+        <li>Kucing bulu dawai</li>
+        <li>Kucing kabut</li>
+    </ol>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Kevin</th>
+            <th>Zoe</th>
+            <th>Loui</th>
+        </tr>
+        <tr>
+            <td>October 31</td>
+            <td>March 26</td>
+            <td>February 14</td>
+        </tr>
+    </table>
+
+    <!-- Images -->
+    <img src="sddefault.jpg" alt="kucing" />
+    <img src="gambar/download.jpg" alt="kucing2" width="200px" height="200px" />
+    <img src="data:image/jpeg;base64,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" alt="kucing3" />
+
+    <!-- Form -->
+    <form>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" /><br />
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" /><br />
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+</html>
